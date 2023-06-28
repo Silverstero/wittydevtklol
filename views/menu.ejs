@@ -1,0 +1,67 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Witty.dev</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+        <h1> Create a Witty!</h1>
+        <p> (we are not responsible for the bullshit that is gonna come out of this app)</p>
+        <br>
+        <br>
+        <h1> What Do you want your Witty To say?</h1>
+        <textarea id="Lyrics"> i Fucked your mother with a frying pan! </textarea>
+        <br>
+        <button id="submit" >Submit Text</button>
+
+
+    </body>
+	</body>
+</html>
+
+<style>
+    h1 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    textarea {
+        margin-left: 39%;
+        width: 300px;
+        resize: none;
+    }
+
+    button {
+        margin-left: 39%;
+    }
+</style>
+
+<script>
+    // Get the textbox element by its ID.
+    const textbox = document.getElementById("Lyrics");
+    
+    // Get the button element by its ID.
+    const button = document.getElementById("submit");
+    
+    // Add an event listener to the button element.
+    button.addEventListener("click", function() {
+      // Get the text of the textbox element.
+      const text = textbox.value;
+    
+      // Print the text of the textbox element to the console.
+      console.log(text);
+    });
+    
+    
+    </script>
